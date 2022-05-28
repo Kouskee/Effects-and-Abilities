@@ -1,5 +1,5 @@
 {
-    "m_SGVersion": 2,
+    "m_SGVersion": 3,
     "m_Type": "UnityEditor.ShaderGraph.GraphData",
     "m_ObjectId": "beb8a58d27ea4bd2a5cb054e41bb43de",
     "m_Properties": [
@@ -35,6 +35,12 @@
         }
     ],
     "m_Keywords": [],
+    "m_Dropdowns": [],
+    "m_CategoryData": [
+        {
+            "m_Id": "4fa06f9504c4479a8818b779d71fa5c9"
+        }
+    ],
     "m_Nodes": [
         {
             "m_Id": "92f2f9ac41914d48a60c5a58027e53fb"
@@ -704,10 +710,11 @@
         "serializedMesh": {
             "m_SerializedMesh": "{\"mesh\":{\"instanceID\":0}}",
             "m_Guid": ""
-        }
+        },
+        "preventRotation": false
     },
     "m_Path": "Shader Graphs",
-    "m_ConcretePrecision": 0,
+    "m_GraphPrecision": 0,
     "m_PreviewMode": 2,
     "m_OutputNode": {
         "m_Id": ""
@@ -961,9 +968,13 @@
         "m_GuidSerialized": "c5f14a9d-d9dd-42e1-9e98-e9e4a974a497"
     },
     "m_Name": "DissolveCount",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_128410848c6549bb894f4d7a36b0de19",
     "m_OverrideReferenceName": "DissolveCount_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1265,9 +1276,13 @@
         "m_GuidSerialized": "e3d595d0-140e-48fa-a2d6-b1b952144c03"
     },
     "m_Name": "MainTex",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Texture2D_2002de08680d460da9d98626709263e3",
     "m_OverrideReferenceName": "MainTex_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1276,6 +1291,8 @@
         "m_SerializedTexture": "{\"texture\":{\"instanceID\":0}}",
         "m_Guid": ""
     },
+    "isMainTexture": false,
+    "useTilingAndOffset": false,
     "m_Modifiable": true,
     "m_DefaultType": 0
 }
@@ -1565,9 +1582,13 @@
         "m_GuidSerialized": "aed329d5-8885-4f43-a9b8-00ec47c8dfb8"
     },
     "m_Name": "DissolveScale",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_2e5496ffc31d4a5ba2c8bf645013b011",
     "m_OverrideReferenceName": "DissolveScale_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -1647,7 +1668,8 @@
         "m_SerializableColors": []
     },
     "m_TextureType": 0,
-    "m_NormalMapSpace": 0
+    "m_NormalMapSpace": 0,
+    "m_EnableGlobalMipBias": true
 }
 
 {
@@ -1707,7 +1729,7 @@
     },
     "m_Name": "Clamp",
     "m_DrawState": {
-        "m_Expanded": false,
+        "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
             "x": -954.9999389648438,
@@ -1751,9 +1773,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -874.9998779296875,
-            "y": 1385.0,
-            "width": 152.0,
+            "x": -924.0000610351563,
+            "y": 1396.0,
+            "width": 150.00006103515626,
             "height": 34.0
         }
     },
@@ -2039,9 +2061,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -1437.9998779296875,
-            "y": 203.99996948242188,
-            "width": 139.0,
+            "x": -1462.0001220703125,
+            "y": 204.0,
+            "width": 129.00001525878907,
             "height": 34.0
         }
     },
@@ -2369,6 +2391,45 @@
 
 {
     "m_SGVersion": 0,
+    "m_Type": "UnityEditor.ShaderGraph.CategoryData",
+    "m_ObjectId": "4fa06f9504c4479a8818b779d71fa5c9",
+    "m_Name": "",
+    "m_ChildObjectList": [
+        {
+            "m_Id": "f0794d437f1241229fa38cfe9b4f0f61"
+        },
+        {
+            "m_Id": "2002de08680d460da9d98626709263e3"
+        },
+        {
+            "m_Id": "894448d7a9d24df9bd1e9e016d872641"
+        },
+        {
+            "m_Id": "128410848c6549bb894f4d7a36b0de19"
+        },
+        {
+            "m_Id": "dd15cde6622944e8b7da4a3206ee3c7d"
+        },
+        {
+            "m_Id": "2e5496ffc31d4a5ba2c8bf645013b011"
+        },
+        {
+            "m_Id": "96580f1732ea4f64a5fb3b8d27706424"
+        },
+        {
+            "m_Id": "6559a1429bc541a0a0080e1d114cf2bf"
+        },
+        {
+            "m_Id": "8523dcfe27ee47558b971120cdcff442"
+        },
+        {
+            "m_Id": "6c968af00a5d47979e0ea02cf76e7040"
+        }
+    ]
+}
+
+{
+    "m_SGVersion": 0,
     "m_Type": "UnityEditor.ShaderGraph.Vector1MaterialSlot",
     "m_ObjectId": "50a6a42f2ae9460a8f3ac0090a8b2a63",
     "m_Id": 1,
@@ -2587,9 +2648,13 @@
         "m_GuidSerialized": "62d482cc-f821-4db6-a2e3-d3e63d806512"
     },
     "m_Name": "FresnelColor",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_6559a1429bc541a0a0080e1d114cf2bf",
     "m_OverrideReferenceName": "FresnelColor_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -2600,6 +2665,7 @@
         "b": 1.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -2805,9 +2871,13 @@
         "m_GuidSerialized": "26b7bb4f-a684-44ef-867f-a374e193b184"
     },
     "m_Name": "FresnelMaskPower",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_6c968af00a5d47979e0ea02cf76e7040",
     "m_OverrideReferenceName": "FresnelMaskPower_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -2832,10 +2902,10 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -698.9998779296875,
-            "y": 1193.9998779296875,
-            "width": 146.0,
-            "height": 118.0
+            "x": -693.0,
+            "y": 1305.0,
+            "width": 207.99996948242188,
+            "height": 302.0
         }
     },
     "m_Slots": [
@@ -2851,7 +2921,7 @@
     ],
     "synonyms": [],
     "m_Precision": 0,
-    "m_PreviewExpanded": false,
+    "m_PreviewExpanded": true,
     "m_PreviewMode": 0,
     "m_CustomColors": {
         "m_SerializableColors": []
@@ -3218,9 +3288,13 @@
         "m_GuidSerialized": "2bf4a722-f5a6-4dce-8d3e-cd8b8b39193a"
     },
     "m_Name": "FresnelPower",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_8523dcfe27ee47558b971120cdcff442",
     "m_OverrideReferenceName": "FresnelPower_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -3262,9 +3336,13 @@
         "m_GuidSerialized": "54579a43-cf4d-4574-a758-724636b15bc7"
     },
     "m_Name": "AlphaClip",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_894448d7a9d24df9bd1e9e016d872641",
     "m_OverrideReferenceName": "AlphaClip_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -3512,9 +3590,13 @@
         "m_GuidSerialized": "99bb18e3-c1ce-49e5-afae-2567b2dcb86e"
     },
     "m_Name": "DissolveColor",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_96580f1732ea4f64a5fb3b8d27706424",
     "m_OverrideReferenceName": "DissolveColor_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -3525,6 +3607,7 @@
         "b": 1.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -3848,9 +3931,9 @@
         "m_Expanded": true,
         "m_Position": {
             "serializedVersion": "2",
-            "x": -556.0,
-            "y": -80.00004577636719,
-            "width": 146.0,
+            "x": -493.0,
+            "y": -28.000003814697267,
+            "width": 146.00001525878907,
             "height": 34.0
         }
     },
@@ -4511,9 +4594,13 @@
         "m_GuidSerialized": "550d5278-22e8-441a-bcfe-631423b7bd00"
     },
     "m_Name": "DissolveWidth",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Vector1_dd15cde6622944e8b7da4a3206ee3c7d",
     "m_OverrideReferenceName": "DissolveWidth_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -4680,9 +4767,13 @@
         "m_GuidSerialized": "11c2075e-95f5-415e-8e1e-28ff4785a246"
     },
     "m_Name": "Color",
+    "m_DefaultRefNameVersion": 0,
+    "m_RefNameGeneratedByDisplayName": "",
     "m_DefaultReferenceName": "Color_f0794d437f1241229fa38cfe9b4f0f61",
     "m_OverrideReferenceName": "Color_",
     "m_GeneratePropertyBlock": true,
+    "m_UseCustomSlotLabel": false,
+    "m_CustomSlotLabel": "",
     "m_Precision": 0,
     "overrideHLSLDeclaration": false,
     "hlslDeclarationOverride": 0,
@@ -4693,6 +4784,7 @@
         "b": 1.0,
         "a": 0.0
     },
+    "isMainColor": false,
     "m_ColorMode": 0
 }
 
@@ -4781,8 +4873,8 @@
         "m_Position": {
             "serializedVersion": "2",
             "x": 1110.0,
-            "y": 501.0,
-            "width": 127.0,
+            "y": 500.9999694824219,
+            "width": 126.99999237060547,
             "height": 34.0
         }
     },

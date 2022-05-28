@@ -9,6 +9,8 @@ public class SpawnVFX : MonoBehaviour
     [SerializeField] private int _count = 2;
 
     [SerializeField] private EnumAbilities _enumAbilities;
+    
+    
 
     private void Update()
     {
@@ -24,7 +26,7 @@ public class SpawnVFX : MonoBehaviour
         {
             var forward = transform.forward;
             var prefab = _poolObject.GetObject(_enumAbilities.ToString());
-            prefab.transform.position = transform.position + forward * (count * 2.4f) + forward * 2f;
+            prefab.transform.position = transform.position + forward * (count * 2.4f);// + forward * 2f;
             if (prefab.TryGetComponent(out Pillars pillars))
                 pillars.Install(count + 1);
             prefab.transform.forward = forward;
